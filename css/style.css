@@ -179,20 +179,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-[type="email"],
-a,
-button {
-  font-family: 'Playfair Display', serif;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: #2c2c2c;
+nav a {
+  color: seagreen;
 }
