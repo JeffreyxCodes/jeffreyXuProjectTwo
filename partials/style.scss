@@ -25,7 +25,7 @@
 .wrapper {
     max-width: $wrapper-max;
     margin: 0 auto;
-    @include side-padding(3%);
+    @include side-padding($side-padding);
 }
 
 .link {

@@ -17,7 +17,7 @@
     box-shadow: 0 0 0 6vh $canary;
 }
 
-.index header h1{
+.index header h1 {
     position: absolute;
     bottom: 10vh;
     left: 50%;
@@ -31,4 +31,3 @@
 .blog header {
     @include bg(70vh, "../assets/blog-header.jpg", center bottom);
 }
-

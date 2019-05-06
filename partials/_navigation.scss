@@ -3,6 +3,10 @@ nav {
     justify-content: flex-end;
 }
 
+nav.wrapper {
+    padding-top: 30px;
+}
+
 nav ul {
     display: flex;
 }
