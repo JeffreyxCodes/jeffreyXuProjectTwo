@@ -1,5 +1,7 @@
 @import "./variables";
 
+@import "./mixins";
+
 @import "./setup";
 
 @import "./typography";
@@ -7,3 +9,39 @@
 @import "./header";
 
 @import "./navigation";
+
+@import "./index";
+
+@import "./blog";
+
+@import "./contact";
+
+@import "./footer";
+
+
+////////////////////////////////////
+// general
+////////////////////////////////////
+.wrapper {
+    max-width: $wrapper-max;
+    margin: 0 auto;
+    @include side-padding(3%);
+}
+
+.link {
+    background-color: $sea-green;
+    padding: 10px 20px;
+    line-height: 29px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}

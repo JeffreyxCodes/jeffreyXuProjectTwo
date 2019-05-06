@@ -1,0 +1,170 @@
+////////////////////////////////////
+// index - about
+////////////////////////////////////
+#about {
+    background-color: $ice;
+    padding: 25vh 15% 20vh;
+    text-align: center;
+    p {
+        text-align: left;
+    }
+}
+
+
+////////////////////////////////////
+// index - checker
+////////////////////////////////////
+.checker {
+    background-color: $white;
+}
+
+.checker > div > div {
+    width: 50%;
+}
+
+.top-floor .checker-img,
+.bottom-floor .wrapper {
+    padding-right: 100px;
+}
+
+.top-floor .wrapper,
+.bottom-floor .checker-img {
+    padding-left: 100px;
+}
+
+.checker .wrapper {
+    max-width: $wrapper-max / 2;
+    margin: 0;
+}
+
+.top-floor,
+.bottom-floor {
+    display: flex;
+    // align-items: center;
+}
+
+.top-floor img {
+    position: relative;
+    top: -100px;
+    box-shadow: 3vw 3vw $canary;
+}
+
+.top-floor {
+    padding: 60px 0 5px;
+}
+
+.bottom-floor {
+    padding: 5px 0 60px;
+    flex-direction: row-reverse;
+}
+
+.bottom-floor img {
+    position: relative;
+    bottom: -100px;
+    box-shadow: -3vw 3vw $canary;
+}
+
+
+////////////////////////////////////
+// index - page links
+////////////////////////////////////
+.page-links {
+    background-color: $ice;
+    padding: 150px 0 60px;
+}
+
+.page-links .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-links .wrapper div {
+    width: 50%;
+}
+
+.page-links [aria-label="Go to the top picks page"] {
+    font-size: 2.3rem;
+}
+
+.page-links [aria-label="Go to the community page"] {
+    font-size: 1.6rem;
+}
+
+.page-links [aria-label="Go to the blog page"] {
+    font-size: 1.7rem;
+}
+
+.page-links [aria-label="Go to the contact page"] {
+    font-size: 1.5rem;
+}
+
+.page-links a {
+    @include center(center, null);
+}
+
+.page-links i {
+    background-color: $sea-green;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    @include center(center, center);
+}
+
+.page-links h3 {
+    padding-left: 25px;
+}
+
+.page-links p {
+    padding-left: 80px;
+    margin: 0 0 60px;
+}
+
+
+////////////////////////////////////
+// index - map bg
+////////////////////////////////////
+.map-bg {
+    @include bg(60vh, "../assets/banner.jpg", center);
+}
+
+
+////////////////////////////////////
+// index - profile
+////////////////////////////////////
+.profile {
+    background-color: $ice;
+    padding: 120px 0 100px;
+}
+
+.profile .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile img {
+    margin-right: 120px;
+    box-shadow: 40px 40px $canary;
+}
+
+.profile p {
+    margin-bottom: 55px;
+}
+
+
+////////////////////////////////////
+// index - gallery
+////////////////////////////////////
+.gallery {
+    background-color: $white;
+    padding: 100px 0;
+}
+
+.gallery .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery img{
+    width: 31%;
+}

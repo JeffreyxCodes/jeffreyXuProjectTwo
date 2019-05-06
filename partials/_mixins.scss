@@ -1,0 +1,17 @@
+@mixin side-padding($pad) {
+    padding-left: $pad;
+    padding-right: $pad;
+}
+
+@mixin center($vertical, $horizontal) {
+    display: flex;
+    align-items: $vertical;
+    justify-content: $horizontal;
+}
+
+@mixin bg($height, $url, $position) {
+    height: $height;
+    background-image: url($url);
+    background-position: $position;
+    background-size: cover;
+}

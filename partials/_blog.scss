@@ -1,0 +1,21 @@
+.blog main {
+    display: flex;
+    background-color: $ice;
+}
+
+aside {
+    max-width: $wrapper-max * 0.4;
+}
+
+aside li::before {
+    content: "\2022";
+    color: $sea-green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2em;
+}
+
+.main-content {
+    max-width: $wrapper-max * 0.6;
+}

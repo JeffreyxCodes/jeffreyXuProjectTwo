@@ -1,4 +1,30 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+}
+
+li {
+    margin-left: 40px;
+}
+
 a {
     text-decoration: none;
     color: $black;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+.active {
+    border-bottom: 3px solid $sea-green;
+}
+
+nav i.fas {
+    display: none;
+    color: $sea-green;
+    font-size: 1.8rem;
+    margin-top: 30px;
 }

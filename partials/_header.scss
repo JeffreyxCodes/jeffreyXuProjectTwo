@@ -1,0 +1,34 @@
+////////////////////////////////////
+// index
+////////////////////////////////////
+.index header {
+    position: relative;
+    @include bg(80vh, "../assets/header-image.jpg", left bottom);
+}
+
+.index header img {
+    height: 70vh;
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: -14vh;
+    // border: solid 6vh $canary;
+    // border-right: none;
+    box-shadow: 0 0 0 6vh $canary;
+}
+
+.index header h1{
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+////////////////////////////////////
+// blog
+////////////////////////////////////
+.blog header {
+    @include bg(70vh, "../assets/blog-header.jpg", center bottom);
+}
+
