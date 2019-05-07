@@ -8,6 +8,7 @@
 .blog main {
     display: flex;
     justify-content: space-between;
+    // position: relative;
 }
 
 
@@ -17,14 +18,23 @@
 aside {
     max-width: calc(40% - 80px);
     margin: 120px 80px 0 0;
+    // position: relative;
 }
 
 aside img {
-    top: -20px;
-    position: relative;
-    right: 140px;
+    // right: 140px;
     width: calc(40vw - 80px);
     max-width: calc(40vw - 80px);
+}
+
+aside img.front {
+    top: calc(70vh + 100px);;
+    left: 0;
+    position: absolute;
+}
+
+aside img.back {
+    visibility: hidden;
 }
 
 aside li::before {
@@ -58,11 +68,19 @@ aside p {
 }
 
 .post img {
-    box-shadow: -40px 40px $canary;
+    width: calc(60vw - 58px);
+    max-width: calc(60vw - 58px);
+}
+
+.post img.front {
+    position: absolute;
+    right: 0;
+}
+
+.post img.back {
+    box-shadow: -$shadow-width $shadow-width $canary;
     position: relative;
-    left: 40px;
-    width: calc(60vw - 78px);
-    max-width: calc(60vw - 78px);
+    left: $shadow-width;
 }
 
 .post div {
@@ -70,6 +88,7 @@ aside p {
     padding: 80px 0 10px 60px;
     border: 5px solid $canary;
     border-right: none;
+    border-top: none;
 }
 
 .date {
@@ -84,7 +103,7 @@ aside p {
     margin: 40px 0 0 40px;
 }
 
-.comment h3 {
+.comments h3 {
     margin-bottom: 60px;
 }
 

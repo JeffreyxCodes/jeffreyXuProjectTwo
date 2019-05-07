@@ -46,7 +46,7 @@
 .top-floor img {
     position: relative;
     top: -100px;
-    box-shadow: 3vw 3vw $canary;
+    box-shadow: $shadow-width $shadow-width $canary;
 }
 
 .top-floor {
@@ -61,7 +61,7 @@
 .bottom-floor img {
     position: relative;
     bottom: -100px;
-    box-shadow: -3vw 3vw $canary;
+    box-shadow: -$shadow-width $shadow-width $canary;
 }
 
 
@@ -144,7 +144,7 @@
 
 .profile img {
     margin-right: 120px;
-    box-shadow: 40px 40px $canary;
+    box-shadow: $shadow-width $shadow-width $canary;
 }
 
 .profile p {

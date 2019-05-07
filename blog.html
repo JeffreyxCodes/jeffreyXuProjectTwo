@@ -26,7 +26,8 @@
     <main class="wrapper">
         <aside>
             <div>
-                <img src="assets/side-blog-image.jpg" alt="">
+                <img class="front" src="assets/side-blog-image.jpg" alt="">
+                <img class="back" src="assets/side-blog-image.jpg" alt="">
                 <div class="sidebar-text">
                     <h4>ABOUT CAPTURED</h4>
                     <p>
@@ -48,7 +49,8 @@
         <div class="main-content">
             <section class="post">
                 <h1>BLOG</h1>
-                <img src="assets/blog-post-image.jpg" alt="">
+                <img class="front" src="assets/blog-post-image.jpg" alt="">
+                <img class="back" src="assets/blog-post-image.jpg" alt="">
                 <div>
                     <h2>FINDING GREAT LOCATIONS</h2>
                     <p class="date">Monday May 4th, 2019 by Dieula</p>
@@ -120,6 +122,21 @@
                         </p>
                     </div>
                 </div>
+            </section>
+
+            <section class="post-comment">
+                <form action="">
+                    <fieldset>
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <label for="email" class="visually-hidden">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </fieldset>
+                    <label for="comment" class="visually-hidden">Comment</label>
+                    <textarea name="comment" placeholder="Comment" rows="5" required></textarea>
+
+                    <button type="submit">POST COMMENT</button>
+                </form>
             </section>
         </div>
     </main>

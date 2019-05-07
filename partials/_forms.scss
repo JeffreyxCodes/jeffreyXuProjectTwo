@@ -1,0 +1,83 @@
+////////////////////////////////////
+// Blog - comment form
+////////////////////////////////////
+form {
+    margin-bottom: 80px;
+    background-color: $white;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: none;
+    resize: none;
+}
+
+input,
+textarea {
+    padding: 20px;
+    background-color: $white;
+}
+
+input {
+    width: 47%;
+    border: none;
+    border-bottom: 2px solid $sea-green;
+}
+
+textarea {
+    width: 100%;
+    margin: 40px auto;
+    border: 2px solid $sea-green;
+}
+
+button {
+    background-color: $sea-green;
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+::placeholder {
+    color: $black;
+    opacity: 1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-webkit-input-placeholder {
+    color: $black;
+    opacity: 1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-moz-placeholder {
+    color: $black;
+    opacity: 1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:-moz-placeholder {
+    color: $black;
+    opacity: 1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:-ms-input-placeholder {
+    color: $black;
+    opacity: 1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// contact page from
+.contact form {
+    box-shadow: -$shadow-width $shadow-width $canary;
+    margin-bottom: 0;
+    padding: 60px 70px;
+}

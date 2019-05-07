@@ -7,11 +7,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body class="contact">
+    <header>
+        <h1>GET IN TOUCH</h1>
+        <nav class="wrapper">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./index.html#about">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a class="active" href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="wrapper">
+        <section class="contact-detail">
+            <div class="social-media">
+                <a href="#" aria-label="Go to our facebook page">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Go to our instagram page">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Go to our twitter page">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Go to our whatsapp page">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+            <h2>INFO@EMAIL.COM</h2>
+            <p>123-456-7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </section>
+
+        <form action="">
+            <form action="">
+                <fieldset>
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </fieldset>
+                <label for="message" class="visually-hidden">Message</label>
+                <textarea name="message" placeholder="Message" rows="10" required></textarea>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2018 HackerYou</p>
+    </footer>
 </body>
 
 </html>

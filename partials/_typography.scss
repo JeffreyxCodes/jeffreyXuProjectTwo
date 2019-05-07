@@ -1,3 +1,6 @@
+////////////////////////////////////
+// general
+////////////////////////////////////
 body {
     font-size: 125%;
     font-family: 'Roboto', sans-serif;
@@ -16,8 +19,18 @@ button,
     margin: 0;
 }
 
+
+////////////////////////////////////
+// index
+////////////////////////////////////
+
 .index h1 {
     font-size: 6.9rem;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .index h2 {
@@ -30,6 +43,10 @@ button,
     letter-spacing: 1px;
 }
 
+
+////////////////////////////////////
+// blog
+////////////////////////////////////
 .blog h1 {
     font-size: 4.6rem;
     position: relative;
@@ -46,5 +63,20 @@ button,
 
 .blog h4 {
     font-size: 1.5rem;
+    margin: 20px auto;
+}
+
+
+////////////////////////////////////
+// contact
+////////////////////////////////////
+.contact h1 {
+    font-size: 4.6rem;
+    position: absolute;
+    left: calc(30% + 50px);
+    top: 25vh;
+}
+
+.contact h2 {
     margin: 20px auto;
 }
