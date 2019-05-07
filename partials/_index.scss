@@ -82,7 +82,7 @@
 .page-links .wrapper div {
     width: 50%;
 
-    @include set-width(670px, 100%, null);
+    @include set-width(670px, null, 100%, null);
 }
 
 .page-links [aria-label="Go to the top picks page"] {
@@ -148,15 +148,40 @@
 .profile .wrapper {
     display: flex;
     justify-content: space-between;
-}
 
-.profile img {
-    margin-right: 120px;
-    box-shadow: $shadow-width $shadow-width $canary;
-}
+    @include set-flex-setting(750px, column, null, center);
+    
+    div:first-child {
+        max-width: 40%;
+        min-width: 300px;
+        margin-right: 10%;
 
-.profile p {
-    margin-bottom: 55px;
+        @include set-width(750px, auto, null, 80%);
+        @include set-margin(750px, null, 0, null, null);
+
+        img {
+            box-shadow: $shadow-width $shadow-width $canary;
+            margin-bottom: 60px;
+        }
+    }
+
+    div:last-child {
+        max-width: 60%;
+
+        @include set-width(750px, null, null, 100%);
+
+        h2 {
+            @media (max-width: 750px) {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-bottom: 55px;
+
+            @include set-margin(750px, null, null, 30px, null);
+        }
+    }
 }
 
 
@@ -171,6 +196,8 @@
 .gallery .wrapper {
     display: flex;
     justify-content: space-between;
+
+    
 }
 
 .gallery img{

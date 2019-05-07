@@ -26,8 +26,9 @@
 }
 
 // media query - set width and/or max-width
-@mixin set-width($browser-width, $width, $max-width) {
+@mixin set-width($browser-width, $min-width, $width, $max-width) {
     @media (max-width: $browser-width) {
+        min-width: $min-width;
         width: $width;
         max-width: $max-width;
     }
@@ -40,5 +41,14 @@
         margin-right: $right;
         margin-bottom: $bottom;
         margin-left: $left;
+    }
+}
+
+// media query - set flex setting
+@mixin set-flex-setting($max-width, $direction, $justify, $align) {
+    @media (max-width: $max-width) {
+        flex-direction: $direction;
+        justify-content: $justify;
+        align-items: $align;
     }
 }

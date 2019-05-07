@@ -22,9 +22,11 @@
 // general
 ////////////////////////////////////
 .wrapper {
-    max-width: $wrapper-max;
+    width: $wrapper-max;
+    max-width: 2400px;
     margin: 0 auto;
-    // @include side-padding($side-padding);
+    
+    @include set-width(1000px, null, 90%, null);
 }
 
 .link {

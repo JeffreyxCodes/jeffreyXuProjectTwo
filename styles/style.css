@@ -686,14 +686,67 @@ footer p {
           justify-content: space-between;
 }
 
-.profile img {
-  margin-right: 120px;
-  -webkit-box-shadow: 40px 40px #fdfa69;
-          box-shadow: 40px 40px #fdfa69;
+@media (max-width: 750px) {
+  .profile .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.profile p {
+.profile .wrapper div:first-child {
+  max-width: 40%;
+  min-width: 300px;
+  margin-right: 10%;
+}
+
+@media (max-width: 750px) {
+  .profile .wrapper div:first-child {
+    min-width: auto;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 750px) {
+  .profile .wrapper div:first-child {
+    margin-right: 0;
+  }
+}
+
+.profile .wrapper div:first-child img {
+  -webkit-box-shadow: 40px 40px #fdfa69;
+          box-shadow: 40px 40px #fdfa69;
+  margin-bottom: 60px;
+}
+
+.profile .wrapper div:last-child {
+  max-width: 60%;
+}
+
+@media (max-width: 750px) {
+  .profile .wrapper div:last-child {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .profile .wrapper div:last-child h2 {
+    text-align: center;
+  }
+}
+
+.profile .wrapper div:last-child p {
   margin-bottom: 55px;
+}
+
+@media (max-width: 750px) {
+  .profile .wrapper div:last-child p {
+    margin-bottom: 30px;
+  }
 }
 
 .gallery {
@@ -870,8 +923,15 @@ aside p {
 }
 
 .wrapper {
-  max-width: 80%;
+  width: 80%;
+  max-width: 2400px;
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
 }
 
 .link {
