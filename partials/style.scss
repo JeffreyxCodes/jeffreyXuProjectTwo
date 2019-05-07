@@ -1,24 +1,21 @@
+// abstracts
 @import "./variables";
-
 @import "./mixins";
 
+// base
 @import "./setup";
-
 @import "./typography";
 
+// layout
 @import "./header";
-
 @import "./navigation";
-
-@import "./index";
-
-@import "./blog";
-
-@import "./contact";
-
 @import "./forms";
-
 @import "./footer";
+
+// pages
+@import "./index";
+@import "./blog";
+@import "./contact";
 
 
 ////////////////////////////////////
@@ -27,7 +24,7 @@
 .wrapper {
     max-width: $wrapper-max;
     margin: 0 auto;
-    @include side-padding($side-padding);
+    // @include side-padding($side-padding);
 }
 
 .link {

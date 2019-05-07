@@ -3,15 +3,42 @@
     padding-right: $pad;
 }
 
+// vertically and/or horizontally align an element
 @mixin center($vertical, $horizontal) {
     display: flex;
     align-items: $vertical;
     justify-content: $horizontal;
 }
 
+// general background header setup
 @mixin bg($height, $url, $position) {
     height: $height;
     background-image: url($url);
     background-position: $position;
     background-size: cover;
+}
+
+// media query - set font-size
+@mixin set-font-size($max-width, $font-size) {
+    @media (max-width: $max-width) {
+        font-size: $font-size;
+    }
+}
+
+// media query - set width and/or max-width
+@mixin set-width($browser-width, $width, $max-width) {
+    @media (max-width: $browser-width) {
+        width: $width;
+        max-width: $max-width;
+    }
+}
+
+// media query - set margin
+@mixin set-margin($max-width, $top, $right, $bottom, $left) {
+    @media (max-width: $max-width) {
+        margin-top: $top;
+        margin-right: $right;
+        margin-bottom: $bottom;
+        margin-left: $left;
+    }
 }

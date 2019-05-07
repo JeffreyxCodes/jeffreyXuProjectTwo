@@ -9,6 +9,10 @@ nav.wrapper {
 
 nav ul {
     display: flex;
+
+    @media (max-width: 880px) {
+        display: none;
+    }
 }
 
 li {
@@ -31,5 +35,12 @@ nav i.fas {
     display: none;
     color: $sea-green;
     font-size: 1.8rem;
-    margin-top: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 880px) {
+        display: block;
+    }
 }

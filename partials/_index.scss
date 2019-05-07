@@ -19,17 +19,17 @@
 }
 
 .checker > div > div {
-    width: 50%;
+    width: 46%;
 }
 
 .top-floor .checker-img,
 .bottom-floor .wrapper {
-    padding-right: 100px;
+    margin-right: 4%;
 }
 
 .top-floor .wrapper,
 .bottom-floor .checker-img {
-    padding-left: 100px;
+    margin-left: 4%;
 }
 
 .checker .wrapper {
@@ -81,6 +81,8 @@
 
 .page-links .wrapper div {
     width: 50%;
+
+    @include set-width(670px, 100%, null);
 }
 
 .page-links [aria-label="Go to the top picks page"] {
@@ -112,12 +114,14 @@
 }
 
 .page-links h3 {
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .page-links p {
-    padding-left: 80px;
+    padding-left: 75px;
     margin: 0 0 60px;
+
+    @include set-margin(670px, null, null, 30px, null);
 }
 
 
@@ -126,6 +130,10 @@
 ////////////////////////////////////
 .map-bg {
     @include bg(60vh, "../assets/banner.jpg", center);
+
+    @media (max-width: 600px) {
+        height: 30vh;
+    }
 }
 
 
@@ -139,7 +147,7 @@
 
 .profile .wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .profile img {
