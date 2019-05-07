@@ -1,5 +1,5 @@
 ////////////////////////////////////
-// Blog - comment form
+// general
 ////////////////////////////////////
 form {
     margin-bottom: 80px;
@@ -52,32 +52,24 @@ button {
 ::-webkit-input-placeholder {
     color: $black;
     opacity: 1;
-    font-weight: 400;
-    font-style: normal;
 }
 
 ::-moz-placeholder {
     color: $black;
     opacity: 1;
-    font-weight: 400;
-    font-style: normal;
 }
 
 :-moz-placeholder {
     color: $black;
     opacity: 1;
-    font-weight: 400;
-    font-style: normal;
 }
 
 :-ms-input-placeholder {
     color: $black;
     opacity: 1;
-    font-weight: 400;
-    font-style: normal;
 }
 
-// contact page from
+// contact page form
 .contact form {
     box-shadow: -$shadow-width $shadow-width $canary;
     margin-bottom: 0;

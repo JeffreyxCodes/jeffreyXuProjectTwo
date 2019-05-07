@@ -463,29 +463,21 @@ button {
 ::-webkit-input-placeholder {
   color: #2c2c2c;
   opacity: 1;
-  font-weight: 400;
-  font-style: normal;
 }
 
 ::-moz-placeholder {
   color: #2c2c2c;
   opacity: 1;
-  font-weight: 400;
-  font-style: normal;
 }
 
 :-moz-placeholder {
   color: #2c2c2c;
   opacity: 1;
-  font-weight: 400;
-  font-style: normal;
 }
 
 :-ms-input-placeholder {
   color: #2c2c2c;
   opacity: 1;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .contact form {
@@ -846,8 +838,8 @@ aside p {
 }
 
 .post img {
-  width: calc(60vw - 58px);
-  max-width: calc(60vw - 58px);
+  width: calc(60vw - 80px);
+  max-width: calc(60vw - 80px);
 }
 
 .post img.front {
