@@ -26,6 +26,11 @@ input {
     border-bottom: 2px solid $sea-green;
 }
 
+input[type="email"] {
+    font-weight: 400;
+    font-style: normal;
+}
+
 textarea {
     width: 100%;
     margin: 40px auto;
@@ -42,8 +47,6 @@ button {
 ::placeholder {
     color: $black;
     opacity: 1;
-    font-weight: 400;
-    font-style: normal;
 }
 
 ::-webkit-input-placeholder {
