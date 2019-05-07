@@ -749,6 +749,12 @@ footer p {
   }
 }
 
+@media (max-width: 750px) {
+  .profile .wrapper div:last-child div {
+    text-align: center;
+  }
+}
+
 .gallery {
   background-color: #fafafa;
   padding: 100px 0;
@@ -761,10 +767,27 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.gallery img {
+@media (max-width: 500px) {
+  .gallery .wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.gallery .wrapper img {
   width: 31%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .gallery .wrapper img {
+    width: 45%;
+  }
 }
 
 .blog {

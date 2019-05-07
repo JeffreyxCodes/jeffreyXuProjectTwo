@@ -181,6 +181,12 @@
 
             @include set-margin(750px, null, null, 30px, null);
         }
+
+        div {
+            @media (max-width: 750px) {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -191,15 +197,19 @@
 .gallery {
     background-color: $white;
     padding: 100px 0;
-}
 
-.gallery .wrapper {
-    display: flex;
-    justify-content: space-between;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-    
-}
+        @include set-flex-setting(500px, null, space-evenly, null);
 
-.gallery img{
-    width: 31%;
+        img {
+            width: 31%;
+            margin-bottom: 10px;
+
+            @include set-width(500px, null, 45%, null);
+        }
+    }
 }
