@@ -396,7 +396,6 @@ nav i.fas:hover {
 
 form {
   margin-bottom: 80px;
-  background-color: #fafafa;
 }
 
 fieldset {
@@ -415,7 +414,7 @@ fieldset {
 input,
 textarea {
   padding: 20px;
-  background-color: #fafafa;
+  background: none;
 }
 
 input {
@@ -498,6 +497,7 @@ button {
           box-shadow: -40px 40px #fdfa69;
   margin-bottom: 0;
   padding: 60px 70px;
+  background-color: #fafafa;
 }
 
 footer {

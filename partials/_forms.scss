@@ -3,7 +3,6 @@
 ////////////////////////////////////
 form {
     margin-bottom: 80px;
-    background-color: $white;
 }
 
 fieldset {
@@ -18,7 +17,7 @@ fieldset {
 input,
 textarea {
     padding: 20px;
-    background-color: $white;
+    background: none;
 }
 
 input {
@@ -80,4 +79,5 @@ button {
     box-shadow: -$shadow-width $shadow-width $canary;
     margin-bottom: 0;
     padding: 60px 70px;
+    background-color: $white;
 }
