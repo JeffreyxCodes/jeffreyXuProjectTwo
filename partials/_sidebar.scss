@@ -1,0 +1,52 @@
+////////////////////////////////////
+// sidebar
+////////////////////////////////////
+aside {
+    width: 40%;
+    margin: 120px 0 0 0;
+
+    @include set-none(800px);
+
+    .sidebar-wrapper {
+        background-color: $white;
+
+        img {
+            max-width: calc(100% - 20px);
+            position: relative;
+            top: -20px;
+        }
+    }
+}
+
+.color-block {
+    width: 32%;
+    height: 600px;
+    background-color: $ice;
+    float: left;
+    display: block;
+    position: relative;
+    top: -20px;
+
+    @include set-width(1000px, null, 14%, null);
+}
+
+.sidebar-text {
+    padding: 0 20px 20px;
+    margin-left: 32%;
+
+    p {
+        padding-bottom: 40px;
+    }
+
+    @include set-margin(1000px, null, null, null, 14%);
+}
+
+aside li::before {
+    content: "\2022";
+    color: $sea-green;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2em;
+    margin-right: 5px;
+}
