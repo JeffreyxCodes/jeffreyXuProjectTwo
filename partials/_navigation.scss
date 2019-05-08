@@ -10,9 +10,7 @@ nav.wrapper {
 nav ul {
     display: flex;
 
-    @media (max-width: 880px) {
-        display: none;
-    }
+    @include set-none(880px);
 }
 
 li {

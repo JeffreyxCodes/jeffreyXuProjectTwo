@@ -22,11 +22,7 @@
 // general
 ////////////////////////////////////
 .wrapper {
-    width: $wrapper-max;
-    max-width: 2400px;
-    margin: 0 auto;
-    
-    @include set-width(1000px, null, 90%, null);
+    @include set-wrapper();
 }
 
 .sidebar-wrapper {
@@ -41,6 +37,8 @@
     max-width: 1440px;
 
     @include set-width(1000px, null, calc(60% * 3 / 2), null);
+
+    @include set-width(800px, null, 100%, null);
 }
 
 .link {

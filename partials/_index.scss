@@ -5,6 +5,7 @@
     background-color: $ice;
     padding: 25vh 15% 20vh;
     text-align: center;
+
     p {
         text-align: left;
     }
@@ -110,6 +111,7 @@
     width: 55px;
     height: 55px;
     border-radius: 50%;
+    
     @include center(center, center);
 }
 

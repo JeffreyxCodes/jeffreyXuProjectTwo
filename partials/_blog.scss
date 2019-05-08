@@ -7,7 +7,6 @@
 
 .blog main {
     display: flex;
-    // justify-content: space-between;
 }
 
 
@@ -17,6 +16,8 @@
 aside {
     width: 40%;
     margin: 120px 0 0 0;
+
+    @include set-none(800px);
 
     .sidebar-wrapper {
         background-color: $white;
@@ -70,11 +71,22 @@ aside li::before {
     width: 60%;
     margin-top: -30vh;
 
+    @media (max-width: 800px) {
+        @include set-wrapper();
+        margin-top: -40vh;
+    }
+
     > img {
         max-width: calc(100% - #{$shadow-width});
         box-shadow: -$shadow-width $shadow-width $canary;
         position: relative;
         left: $shadow-width;
+
+        @media (max-width: 675px) {
+            max-width: calc(100% - 20px);
+            box-shadow: -20px 20px $canary;
+            left: 20px;
+        }
     }
 
     .post {
@@ -83,13 +95,19 @@ aside li::before {
         border-right: none;
         border-top: none;
 
+        @include set-padding(600px, 70px, null, null, 0);
+
+        @media (max-width: 600px) {
+            border: none;
+        }
+
         .date {
             margin-bottom: 70px;
+
+            @include set-margin(600px, null, null, 30px, null);
         }
     }
 }
-
-
 
 
 ////////////////////////////////////
@@ -97,27 +115,33 @@ aside li::before {
 ////////////////////////////////////
 .comments {
     margin: 40px 0 0 40px;
-}
 
-.comments h3 {
-    margin-bottom: 60px;
+    @include set-margin(700px, null, null, null, 10px);
+
+    h3 {
+        margin-bottom: 60px;
+    }
 }
 
 .comment-container {
     display: flex;
-}
 
-.commenter {
-    width: 12%;
-}
+    .commenter {
+        width: 12%;
+        min-width: 100px;
+    }
 
-.comment {
-    width: 88%;
-    padding-left: 40px;
-    margin-bottom: 80px;
-}
+    .comment {
+        max-width: 88%;
+        padding-left: 40px;
+        margin-bottom: 80px;
 
-.comment > p {
-    margin-top: -10px;
-    margin-bottom: 5px;
+        @include set-padding(700px, null, null, null, 20px);
+        @include set-margin(700px, null, null, 40px, null);
+
+        > p {
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+    }
 }

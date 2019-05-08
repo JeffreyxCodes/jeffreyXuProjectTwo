@@ -275,12 +275,27 @@ button {
 
 .blog h1 {
   font-size: 4.6rem;
+  width: 50%;
   position: relative;
   top: -40px;
+  left: 40px;
+}
+
+@media (max-width: 500px) {
+  .blog h1 {
+    font-size: 3.5rem;
+  }
 }
 
 .blog h2 {
   font-size: 2.6rem;
+  line-height: 1.01;
+}
+
+@media (max-width: 500px) {
+  .blog h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .blog h3 {
@@ -793,6 +808,12 @@ aside {
   margin: 120px 0 0 0;
 }
 
+@media (max-width: 800px) {
+  aside {
+    display: none;
+  }
+}
+
 aside .sidebar-wrapper {
   background-color: #fafafa;
 }
@@ -849,12 +870,36 @@ aside li::before {
   margin-top: -30vh;
 }
 
+@media (max-width: 800px) {
+  .main-content {
+    width: 80%;
+    max-width: 2400px;
+    margin: 0 auto;
+    margin-top: -40vh;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 1000px) {
+  .main-content {
+    width: 90%;
+  }
+}
+
 .main-content > img {
   max-width: calc(100% - 40px);
   -webkit-box-shadow: -40px 40px #fdfa69;
           box-shadow: -40px 40px #fdfa69;
   position: relative;
   left: 40px;
+}
+
+@media (max-width: 675px) {
+  .main-content > img {
+    max-width: calc(100% - 20px);
+    -webkit-box-shadow: -20px 20px #fdfa69;
+            box-shadow: -20px 20px #fdfa69;
+    left: 20px;
+  }
 }
 
 .main-content .post {
@@ -864,12 +909,37 @@ aside li::before {
   border-top: none;
 }
 
+@media (max-width: 600px) {
+  .main-content .post {
+    padding-top: 70px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content .post {
+    border: none;
+  }
+}
+
 .main-content .post .date {
   margin-bottom: 70px;
 }
 
+@media (max-width: 600px) {
+  .main-content .post .date {
+    margin-bottom: 30px;
+  }
+}
+
 .comments {
   margin: 40px 0 0 40px;
+}
+
+@media (max-width: 700px) {
+  .comments {
+    margin-left: 10px;
+  }
 }
 
 .comments h3 {
@@ -882,19 +952,32 @@ aside li::before {
   display: flex;
 }
 
-.commenter {
+.comment-container .commenter {
   width: 12%;
+  min-width: 100px;
 }
 
-.comment {
-  width: 88%;
+.comment-container .comment {
+  max-width: 88%;
   padding-left: 40px;
   margin-bottom: 80px;
 }
 
-.comment > p {
+@media (max-width: 700px) {
+  .comment-container .comment {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .comment-container .comment {
+    margin-bottom: 40px;
+  }
+}
+
+.comment-container .comment > p {
   margin-top: -10px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .contact {
@@ -966,6 +1049,12 @@ aside li::before {
 @media (max-width: 1000px) {
   .blog-content-wrapper {
     width: calc(60% * 3 / 2);
+  }
+}
+
+@media (max-width: 800px) {
+  .blog-content-wrapper {
+    width: 100%;
   }
 }
 
