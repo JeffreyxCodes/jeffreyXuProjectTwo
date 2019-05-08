@@ -105,11 +105,19 @@ button {
 ////////////////////////////////////
 .contact h1 {
     font-size: 4.6rem;
+    line-height: 1.02;
     position: absolute;
     left: calc(30% + 50px);
     top: 25vh;
+
+    @include set-font-size(1000px, 3.8rem);
+
+    @include set-font-size(800px, 3.3rem);
+
+    @include set-font-size(500px, 2.5rem);
 }
 
-.contact h2 {
+.contact h3 {
+    font-size: 1.3rem;
     margin: 20px auto;
 }

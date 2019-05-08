@@ -3,32 +3,53 @@
 ////////////////////////////////////
 .contact {
     background-color: $ice;
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 60px;
+        position: relative;
+        top: -30vh;
+
+        @include set-flex-setting(800px, column, null, center);
+        
+        @media(max-width: 800px) {
+            position: initial;
+        }
+    }
+
+    .contact-detail {
+        width: 30%;
+        min-width: 290px;
+        position: relative;
+        bottom: -40px;
+        margin-right: 50px;
+
+        @media(max-width: 1300px) {
+            bottom: -20px;
+        }
+
+        @include set-margin(800px, 40px, auto, 40px, auto);
+
+        @media(max-width: 800px) {
+            position: initial;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
 }
 
-.contact main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 60px;
-    position: relative;
-    top: -30vh;
-}
+.social-media {
+    @include set-flex-setting(800px, null, space-around, null);
 
-.contact-detail {
-    width: 30%;
-    position: relative;
-    bottom: -40px;
-}
+    a {
+        margin-right: 30px;
+        font-size: 1.5rem;
 
-.contact form {
-    width: 70%;
-}
-
-.social-media a {
-    margin-right: 30px;
-    font-size: 1.5rem;
-}
-
-.contact p {
-    margin: 0;
+        @include set-margin(800px, null, 0, null, null);
+    }
 }

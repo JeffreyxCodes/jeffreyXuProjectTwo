@@ -17,7 +17,6 @@
 }
 
 
-
 ////////////////////////////////////
 // blog
 ////////////////////////////////////
@@ -30,5 +29,5 @@
 // contact
 ////////////////////////////////////
 .contact header {
-    @include bg(70vh, "../assets/contact-header.jpg", left center);
+    @include bg(70vh, "../assets/contact-header.jpg", 30% center);
 }
