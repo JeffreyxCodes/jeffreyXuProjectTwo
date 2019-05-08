@@ -17,52 +17,81 @@
 ////////////////////////////////////
 .checker {
     background-color: $white;
-}
 
-.checker > div > div {
-    width: 46%;
-}
+    .checker-img {
+        width: 42.5%;
 
-.top-floor .checker-img,
-.bottom-floor .wrapper {
-    margin-right: 4%;
-}
+        @include set-width(1000px, null, 70%, null);
+    }
 
-.top-floor .wrapper,
-.bottom-floor .checker-img {
-    margin-left: 4%;
-}
+    .top-floor {
+        padding: 60px 0 5px;
 
-.checker .wrapper {
-    max-width: $wrapper-max / 2;
-    margin: 0;
+        .wrapper {
+            padding-right: 10%;
+
+            @include set-padding(1000px, 40px, 0, null, null);
+        }
+    }
+
+    .bottom-floor {
+        padding: 5px 0 60px;
+        flex-direction: row-reverse;
+
+        @include set-flex-setting(1000px, column, null, center);
+
+        .wrapper {
+            padding-left: 10%;
+            @include set-padding(1000px, 40px, null, null, 0);
+        }
+    }
 }
 
 .top-floor,
 .bottom-floor {
     display: flex;
-    // align-items: center;
+    justify-content: space-between;
+    align-items: center;
+
+    @include set-flex-setting(1000px, column, null, center);
 }
 
 .top-floor img {
     position: relative;
     top: -100px;
     box-shadow: $shadow-width $shadow-width $canary;
-}
 
-.top-floor {
-    padding: 60px 0 5px;
-}
-
-.bottom-floor {
-    padding: 5px 0 60px;
-    flex-direction: row-reverse;
+    @media (max-width: 1000px) {
+        position: initial;
+        box-shadow: 20px 20px $canary;
+    }
 }
 
 .bottom-floor img {
     position: relative;
     bottom: -100px;
     box-shadow: -$shadow-width $shadow-width $canary;
+
+    @media (max-width: 1000px) {
+        position: initial;
+        box-shadow: -20px 20px $canary;
+        margin-top: 60px;
+    }
+}
+
+.checker .wrapper {
+    width: 42.5%;
+    margin: 0 auto;
+
+    @include set-width(1000px, null, 90%, null);
+
+    @media (max-width: 1000px) {
+        text-align: center;
+
+        p {
+            text-align: left;
+        }
+    }
 }
 
 
@@ -72,18 +101,20 @@
 .page-links {
     background-color: $ice;
     padding: 150px 0 60px;
-}
 
-.page-links .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    @include set-padding(1000px, 60px, null, null, null);
 
-.page-links .wrapper div {
-    width: 50%;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-    @include set-width(670px, null, 100%, null);
+        div {
+            width: 50%;
+
+            @include set-width(670px, null, 100%, null);
+        }
+    }
 }
 
 .page-links [aria-label="Go to the top picks page"] {
@@ -104,19 +135,19 @@
 
 .page-links a {
     @include center(center, null);
-}
 
-.page-links i {
-    background-color: $sea-green;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    
-    @include center(center, center);
-}
+    i {
+        background-color: $sea-green;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
 
-.page-links h3 {
-    padding-left: 20px;
+        @include center(center, center);
+    }
+
+    h3 {
+        padding-left: 20px;
+    }
 }
 
 .page-links p {
