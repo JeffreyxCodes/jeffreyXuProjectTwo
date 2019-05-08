@@ -387,36 +387,59 @@ nav ul {
   }
 }
 
-li {
-  margin-left: 40px;
-}
-
-a {
-  text-decoration: none;
-  color: #2c2c2c;
-  line-height: 29px;
-  letter-spacing: 1px;
-  padding-bottom: 5px;
-}
-
-.active {
-  border-bottom: 3px solid #4ceea7;
-}
-
-nav i.fas {
+nav .fas {
   display: none;
   color: #4ceea7;
   font-size: 1.8rem;
 }
 
-nav i.fas:hover {
+nav .fas:hover {
   cursor: pointer;
 }
 
 @media (max-width: 880px) {
-  nav i.fas {
+  nav .fas {
     display: block;
   }
+}
+
+li {
+  margin-left: 40px;
+}
+
+li a {
+  padding-bottom: 5px;
+  position: relative;
+}
+
+li a.active {
+  border-bottom: 3px solid #4ceea7;
+}
+
+li a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #4ceea7;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: -webkit-transform .5s ease;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  transition: transform .5s ease,-webkit-transform .5s ease;
+}
+
+li a:hover::before {
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 aside {
@@ -442,7 +465,7 @@ aside .sidebar-wrapper img {
 
 .color-block {
   width: 32%;
-  height: 600px;
+  height: 800px;
   background-color: #effdf3;
   float: left;
   display: block;
@@ -949,6 +972,10 @@ footer p {
   }
 }
 
+.profile .wrapper div:last-child div {
+  max-width: 100%;
+}
+
 @media (max-width: 750px) {
   .profile .wrapper div:last-child div {
     text-align: center;
@@ -1255,8 +1282,21 @@ footer p {
 
 .link {
   background-color: #4ceea7;
+  border: 3px solid #4ceea7;
   padding: 10px 20px;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.link:hover {
+  background-color: #fdfa69;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
   line-height: 29px;
+  letter-spacing: 1px;
 }
 
 img {

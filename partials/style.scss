@@ -44,8 +44,20 @@
 
 .link {
     background-color: $sea-green;
+    border: 3px solid $sea-green;
     padding: 10px 20px;
+    transition: background 0.4s;
+
+    &:hover {
+        background-color: $canary;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
     line-height: 29px;
+    letter-spacing: 1px;
 }
 
 img {
