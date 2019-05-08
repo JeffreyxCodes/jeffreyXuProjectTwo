@@ -40,6 +40,22 @@ form {
     }
 }
 
+// contact page form
+.contact form {
+    max-width: 70%;
+    box-shadow: -$shadow-width $shadow-width $canary;
+    margin-bottom: 0;
+    padding: 60px 70px;
+    background-color: $white;
+
+    @media(max-width: 1300px) {
+        box-shadow: -20px 20px $canary;
+        padding: 30px 35px;
+    }
+
+    @include set-width(800px, null, null, 100%);
+}
+
 ::placeholder {
     color: $black;
     opacity: 1;
@@ -63,20 +79,4 @@ form {
 :-ms-input-placeholder {
     color: $black;
     opacity: 1;
-}
-
-// contact page form
-.contact form {
-    max-width: 70%;
-    box-shadow: -$shadow-width $shadow-width $canary;
-    margin-bottom: 0;
-    padding: 60px 70px;
-    background-color: $white;
-
-    @media(max-width: 1300px) {
-        box-shadow: -20px 20px $canary;
-        padding: 30px 35px;
-    }
-
-    @include set-width(800px, null, null, 100%);
 }

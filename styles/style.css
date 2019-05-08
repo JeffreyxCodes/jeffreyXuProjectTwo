@@ -488,6 +488,29 @@ form button {
   padding: 10px;
 }
 
+.contact form {
+  max-width: 70%;
+  -webkit-box-shadow: -40px 40px #fdfa69;
+          box-shadow: -40px 40px #fdfa69;
+  margin-bottom: 0;
+  padding: 60px 70px;
+  background-color: #fafafa;
+}
+
+@media (max-width: 1300px) {
+  .contact form {
+    -webkit-box-shadow: -20px 20px #fdfa69;
+            box-shadow: -20px 20px #fdfa69;
+    padding: 30px 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact form {
+    max-width: 100%;
+  }
+}
+
 ::-webkit-input-placeholder {
   color: #2c2c2c;
   opacity: 1;
@@ -526,29 +549,6 @@ form button {
 :-ms-input-placeholder {
   color: #2c2c2c;
   opacity: 1;
-}
-
-.contact form {
-  max-width: 70%;
-  -webkit-box-shadow: -40px 40px #fdfa69;
-          box-shadow: -40px 40px #fdfa69;
-  margin-bottom: 0;
-  padding: 60px 70px;
-  background-color: #fafafa;
-}
-
-@media (max-width: 1300px) {
-  .contact form {
-    -webkit-box-shadow: -20px 20px #fdfa69;
-            box-shadow: -20px 20px #fdfa69;
-    padding: 30px 35px;
-  }
-}
-
-@media (max-width: 800px) {
-  .contact form {
-    max-width: 100%;
-  }
 }
 
 footer {
