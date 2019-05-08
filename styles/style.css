@@ -289,7 +289,7 @@ button {
 
 .blog h4 {
   font-size: 1.5rem;
-  margin: 20px auto;
+  margin: 5px auto 20px;
 }
 
 .contact h1 {
@@ -786,29 +786,52 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 aside {
-  max-width: calc(40% - 80px);
-  margin: 120px 80px 0 0;
+  width: 40%;
+  margin: 120px 0 0 0;
 }
 
-aside img {
-  width: calc(40vw - 80px);
-  max-width: calc(40vw - 80px);
+aside .sidebar-wrapper {
+  background-color: #fafafa;
 }
 
-aside img.front {
-  top: calc(70vh + 100px);
-  left: 0;
-  position: absolute;
+aside .sidebar-wrapper img {
+  max-width: calc(100% - 20px);
+  position: relative;
+  top: -20px;
 }
 
-aside img.back {
-  visibility: hidden;
+.color-block {
+  width: 32%;
+  height: 600px;
+  background-color: #effdf3;
+  float: left;
+  display: block;
+  position: relative;
+  top: -20px;
+}
+
+@media (max-width: 1000px) {
+  .color-block {
+    width: 14%;
+  }
+}
+
+.sidebar-text {
+  padding: 0 20px 20px;
+  margin-left: 32%;
+}
+
+.sidebar-text p {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .sidebar-text {
+    margin-left: 14%;
+  }
 }
 
 aside li::before {
@@ -818,50 +841,30 @@ aside li::before {
   display: inline-block;
   width: 1em;
   margin-left: -2em;
-}
-
-aside > div {
-  background-color: #fafafa;
-}
-
-.sidebar-text {
-  padding: 0 20px 20px;
-}
-
-aside p {
-  padding-bottom: 40px;
+  margin-right: 5px;
 }
 
 .main-content {
-  max-width: 60%;
+  width: 60%;
   margin-top: -30vh;
 }
 
-.post img {
-  width: calc(60vw - 80px);
-  max-width: calc(60vw - 80px);
-}
-
-.post img.front {
-  position: absolute;
-  right: 0;
-}
-
-.post img.back {
+.main-content > img {
+  max-width: calc(100% - 40px);
   -webkit-box-shadow: -40px 40px #fdfa69;
           box-shadow: -40px 40px #fdfa69;
   position: relative;
   left: 40px;
 }
 
-.post div {
-  padding: 80px 0 10px 60px;
+.main-content .post {
+  padding: 100px 0 10px 60px;
   border: 5px solid #fdfa69;
   border-right: none;
   border-top: none;
 }
 
-.date {
+.main-content .post .date {
   margin-bottom: 70px;
 }
 
@@ -941,6 +944,28 @@ aside p {
 @media (max-width: 1000px) {
   .wrapper {
     width: 90%;
+  }
+}
+
+.sidebar-wrapper {
+  width: calc(40% * 2);
+  max-width: 960px;
+}
+
+@media (max-width: 1000px) {
+  .sidebar-wrapper {
+    width: calc(40% * 9 / 4);
+  }
+}
+
+.blog-content-wrapper {
+  width: calc(60% * 4 / 3);
+  max-width: 1440px;
+}
+
+@media (max-width: 1000px) {
+  .blog-content-wrapper {
+    width: calc(60% * 3 / 2);
   }
 }
 

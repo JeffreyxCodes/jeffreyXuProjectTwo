@@ -7,34 +7,49 @@
 
 .blog main {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 
 
 ////////////////////////////////////
 // sidebar
 ////////////////////////////////////
-$margin: 80px;
 aside {
-    max-width: calc(40% - #{$margin});
-    margin: 120px #{$margin} 0 0;
-    // position: relative;
+    width: 40%;
+    margin: 120px 0 0 0;
+
+    .sidebar-wrapper {
+        background-color: $white;
+
+        img {
+            max-width: calc(100% - 20px);
+            position: relative;
+            top: -20px;
+        }
+    }
 }
 
-aside img {
-    // right: 140px;
-    width: calc(40vw - #{$margin});
-    max-width: calc(40vw - #{$margin});
+.color-block {
+    width: 32%;
+    height: 600px;
+    background-color: $ice;
+    float: left;
+    display: block;
+    position: relative;
+    top: -20px;
+
+    @include set-width(1000px, null, 14%, null);
 }
 
-aside img.front {
-    top: calc(70vh + 100px);;
-    left: 0;
-    position: absolute;
-}
+.sidebar-text {
+    padding: 0 20px 20px;
+    margin-left: 32%;
 
-aside img.back {
-    visibility: hidden;
+    p {
+        padding-bottom: 40px;
+    }
+
+    @include set-margin(1000px, null, null, null, 14%);
 }
 
 aside li::before {
@@ -44,18 +59,7 @@ aside li::before {
     display: inline-block;
     width: 1em;
     margin-left: -2em;
-}
-
-aside > div {
-    background-color: $white;
-}
-
-.sidebar-text {
-    padding: 0 20px 20px;    
-}
-
-aside p {
-    padding-bottom: 40px;
+    margin-right: 5px;
 }
 
 
@@ -63,37 +67,29 @@ aside p {
 // main content - post
 ////////////////////////////////////
 .main-content {
-    max-width: 60%;
+    width: 60%;
     margin-top: -30vh;
+
+    > img {
+        max-width: calc(100% - #{$shadow-width});
+        box-shadow: -$shadow-width $shadow-width $canary;
+        position: relative;
+        left: $shadow-width;
+    }
+
+    .post {
+        padding: 100px 0 10px 60px;
+        border: 5px solid $canary;
+        border-right: none;
+        border-top: none;
+
+        .date {
+            margin-bottom: 70px;
+        }
+    }
 }
 
-.post img {
-    width: calc(60vw - #{$margin});
-    max-width: calc(60vw - #{$margin});
-}
 
-.post img.front {
-    position: absolute;
-    right: 0;
-}
-
-.post img.back {
-    box-shadow: -$shadow-width $shadow-width $canary;
-    position: relative;
-    left: $shadow-width;
-    // left: $margin;
-}
-
-.post div {
-    padding: #{$margin} 0 10px 60px;
-    border: 5px solid $canary;
-    border-right: none;
-    border-top: none;
-}
-
-.date {
-    margin-bottom: 70px;
-}
 
 
 ////////////////////////////////////

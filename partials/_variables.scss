@@ -5,8 +5,14 @@ $black: #2c2c2c;
 $white: #fafafa;
 $ice: #effdf3;
 
-// wrapper
+// general wrapper
 $wrapper-max: 80%;
+
+// sidebar wrapper
+$sidebar-wrapper: calc(40% * 2);
+
+// blog content wrapper
+$blog-content-wrapper: calc(60% * 4 / 3);
 
 // box-shadow width
 $shadow-width: 40px;

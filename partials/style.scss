@@ -29,6 +29,20 @@
     @include set-width(1000px, null, 90%, null);
 }
 
+.sidebar-wrapper {
+    width: $sidebar-wrapper;
+    max-width: 960px;
+
+    @include set-width(1000px, null, calc(40% * 9 / 4), null);
+}
+
+.blog-content-wrapper {
+    width: $blog-content-wrapper;
+    max-width: 1440px;
+
+    @include set-width(1000px, null, calc(60% * 3 / 2), null);
+}
+
 .link {
     background-color: $sea-green;
     padding: 10px 20px;
